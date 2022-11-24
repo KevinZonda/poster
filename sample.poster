@@ -1,0 +1,20 @@
+-- This is an example of poster
+GET https://google.com
+TLS 1.2+ | v4
+Header:
+  User-Agent=Poster
+  X-Forward-For=kevinzonda.com
+Payload:
+  {
+    "name":"poster"
+  }
+
+--------------------
+
+GET https://api.kevinzonda.com
+H:Host=google.com
+H:User-Agent=hh
+Payload={"name":"poster"}
+Expect:
+  Status: 200
+  Result[name]==lol
