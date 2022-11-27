@@ -1,0 +1,12 @@
+# IDEs
+.vscode
+.vs
+.idea
+
+# Build
+out/
+build/
+bin/
+
+# Binary
+*.exe
